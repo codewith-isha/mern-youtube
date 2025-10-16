@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
   Box,
+  IconButton,
   InputBase,
   Avatar,
-  Stack,
-  useMediaQuery,
+  Typography,
+  Paper,
 } from "@mui/material";
-import { styled, alpha } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardVoiceIcon from "@mui/icons-material/KeyboardVoice";
 import SearchIcon from "@mui/icons-material/Search";
@@ -18,119 +14,148 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
 
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius * 10,
-  backgroundColor: alpha("#121212", 1),
-  "&:hover": {
-    backgroundColor: alpha("#1E1E1E", 1),
-  },
-  marginLeft: 0,
-  width: "100%",
-  display: "flex",
-  alignItems: "center",
-  border: "1px solid #3A3A3A",
-  [theme.breakpoints.up("sm")]: {
-    width: "auto",
-  },
-}));
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  cursor: "pointer",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  flex: 1,
-  paddingLeft: theme.spacing(2),
-  "& .MuiInputBase-input": {
-    color: "white",
-    padding: theme.spacing(1, 0, 1, 0),
-    width: "100%",
-  },
-}));
-
 const Navbar = () => {
   const [userPic] = useState(
     "https://th.bing.com/th/id/OIP.Wy2uo_y-ttULYs4chLmqSAAAAA?rs=1&pid=ImgDetMain"
   );
+  const [navbarModal, setNavbarModal] = useState(false);
 
-  const isMobile = useMediaQuery("(max-width:600px)");
+  const handleClickModal = () => {
+    setNavbarModal((prev) => !prev);
+  };
 
   return (
-    <AppBar
-      position="fixed"
+    <Box
       sx={{
+        height: "56px",
+        px: 2,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        position: "fixed",
+        top: 0,
+        width: "100%",
         bgcolor: "black",
-        boxShadow: "none",
-        px: { xs: 1, sm: 2 },
+        zIndex: 10,
       }}
     >
-      <Toolbar sx={{ justifyContent: "space-between", gap: 2 }}>
-        {/* Left Section */}
-        <Stack direction="row" alignItems="center" spacing={1}>
-          <IconButton color="inherit">
-            <MenuIcon />
-          </IconButton>
+      {/* LEFT SECTION */}
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+        <IconButton sx={{ color: "white" }}>
+          <MenuIcon />
+        </IconButton>
 
-          <Stack
-            direction="row"
-            alignItems="center"
-            sx={{ cursor: "pointer", color: "white" }}
-          >
-            <YouTubeIcon sx={{ color: "red", fontSize: 32 }} />
-            {!isMobile && (
-              <Typography
-                variant="h6"
-                sx={{ fontWeight: 600, fontFamily: "Lora, serif", ml: 0.5 }}
-              >
-                YouTube
-              </Typography>
-            )}
-          </Stack>
-        </Stack>
-
-        {/* Middle Section (Search) */}
-        {!isMobile && (
-          <Box
+        <Box sx={{ display: "flex", alignItems: "center", color: "white", cursor: "pointer" }}>
+          <YouTubeIcon sx={{ color: "red", fontSize: 34 }} />
+          <Typography
             sx={{
-              display: "flex",
-              alignItems: "center",
-              width: "50%",
-              justifyContent: "center",
-              gap: 1,
+              fontSize: "20px",
+              fontFamily: "Lora, serif",
+              fontWeight: 600,
+              ml: 0.5,
             }}
           >
-            <Search sx={{ flexGrow: 1 }}>
-              <StyledInputBase placeholder="Search" />
-              <SearchIconWrapper>
-                <SearchIcon />
-              </SearchIconWrapper>
-            </Search>
+            YouTube
+          </Typography>
+        </Box>
+      </Box>
 
-            <IconButton sx={{ bgcolor: "#2A2A2A", color: "white" }}>
-              <KeyboardVoiceIcon />
-            </IconButton>
+      {/* MIDDLE SECTION */}
+      <Box sx={{ display: "flex", alignItems: "center", width: "50%", gap: 1 }}>
+        <Paper
+          component="form"
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            width: "80%",
+            bgcolor: "#121212",
+            borderRadius: "20px",
+            overflow: "hidden",
+            border: "1px solid rgb(58,57,57)",
+          }}
+        >
+          <InputBase
+            placeholder="search"
+            sx={{
+              ml: 2,
+              flex: 1,
+              color: "white",
+              fontSize: 16,
+              "&::placeholder": { color: "white" },
+            }}
+          />
+          <IconButton
+            sx={{
+              p: "10px",
+              bgcolor: "rgb(42,42,42)",
+              borderRadius: 0,
+              color: "white",
+              borderLeft: "1px solid rgb(42,42,42)",
+              width: 70,
+            }}
+          >
+            <SearchIcon sx={{ fontSize: 28 }} />
+          </IconButton>
+        </Paper>
+
+        <IconButton
+          sx={{
+            bgcolor: "rgb(42,42,42)",
+            width: 40,
+            height: 40,
+            color: "white",
+            borderRadius: "50%",
+          }}
+        >
+          <KeyboardVoiceIcon />
+        </IconButton>
+      </Box>
+
+      {/* RIGHT SECTION */}
+      <Box sx={{ display: "flex", alignItems: "center", gap: 2, position: "relative" }}>
+        <IconButton sx={{ color: "white" }}>
+          <VideoCallIcon sx={{ fontSize: 30 }} />
+        </IconButton>
+        <IconButton sx={{ color: "white" }}>
+          <NotificationsIcon sx={{ fontSize: 30 }} />
+        </IconButton>
+
+        <Avatar
+          src={userPic}
+          sx={{ width: 30, height: 30, cursor: "pointer" }}
+          onClick={handleClickModal}
+        />
+
+        {navbarModal && (
+          <Box
+            sx={{
+              position: "absolute",
+              top: 40,
+              right: 0,
+              width: "120px",
+              bgcolor: "rgb(85,85,85)",
+              borderRadius: "8px",
+              overflow: "hidden",
+              zIndex: 20,
+              color: "white",
+            }}
+          >
+            {["Profile", "Logout", "Login"].map((item) => (
+              <Box
+                key={item}
+                sx={{
+                  p: 1,
+                  cursor: "pointer",
+                  "&:hover": { bgcolor: "rgb(34,33,33)" },
+                }}
+              >
+                {item}
+              </Box>
+            ))}
           </Box>
         )}
-
-        {/* Right Section */}
-        <Stack direction="row" alignItems="center" spacing={2}>
-          <IconButton sx={{ color: "white" }}>
-            <VideoCallIcon />
-          </IconButton>
-          <IconButton sx={{ color: "white" }}>
-            <NotificationsIcon />
-          </IconButton>
-          <Avatar src={userPic} sx={{ width: 32, height: 32, cursor: "pointer" }} />
-        </Stack>
-      </Toolbar>
-    </AppBar>
+      </Box>
+    </Box>
   );
 };
 
