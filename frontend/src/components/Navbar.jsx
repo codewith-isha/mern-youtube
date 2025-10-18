@@ -14,7 +14,8 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
 
-const Navbar = () => {
+
+const Navbar = ({setSideNavbarFunction , sideNavbar}) => {
   const [userPic] = useState(
     "https://th.bing.com/th/id/OIP.Wy2uo_y-ttULYs4chLmqSAAAAA?rs=1&pid=ImgDetMain"
   );
@@ -23,6 +24,10 @@ const Navbar = () => {
   const handleClickModal = () => {
     setNavbarModal((prev) => !prev);
   };
+  const sideNavbarFunc=()=>{
+    setSideNavbarFunction(!sideNavbar)
+    // console.log(`hiiiiiii`)
+  }
 
   return (
     <Box
@@ -40,7 +45,7 @@ const Navbar = () => {
       }}
     >
       {/* LEFT SECTION */}
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }} onClick={sideNavbarFunc}>
         <IconButton sx={{ color: "white" }}>
           <MenuIcon />
         </IconButton>
