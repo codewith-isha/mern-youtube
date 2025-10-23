@@ -1,9 +1,69 @@
+.fullHomePage{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  flex: 1;
+  min-height: 100vh;
+  
+}
+
+
+
 .homePage{
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
   flex: 1;
-  margin-left: 270px;
+  margin-left: 274px;
   min-height: 100vh;
 
+}
+.homePage_options{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  top: 56px;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 10px;
+  flex-shrink: 0;
+  height: 10vh;
+  overflow-x: scroll;
+  background-color: rgb(0, 0, 0);
+}
+.homePage_options::-webkit-scrollbar{
+  width: 12px;
+}
+.homePage_option{
+  flex: 0 0 auto;
+  height: 30px;
+  padding: 1px 10px;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home_mainpage{
+  display: flex;
+  box-sizing: border-box;
+  gap: 10px;
+  grid-template-columns: 384px 384px 384px;
+  padding: 90px 0 20px 0;
+}
+.youtube_video{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction:column;
+  cursor: pointer;
+  height: 316px;
 }
