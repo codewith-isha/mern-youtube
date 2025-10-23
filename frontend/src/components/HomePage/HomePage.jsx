@@ -30,12 +30,156 @@ const HomePage = ({sideNavbar}) => {
       </div>
 
 
-      <div className="home_mainpage">
+      <div className={sideNavbar?"home_mainpage":"home_mainPageWithoutLink"}>
+{/* 1 */}
         <div className="youtube_video">
-          
-        </div>
-      </div>
 
+          <div className="youtube_thumbnailBox">
+            <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="dummy" className="youtube_thumbnailPic" />
+            <div className="youtube_timingThumbnail">
+              28:05
+            </div>
+          </div>
+
+          <div className="youtubeTitleBox">
+            <div className="youtubeTitleBoxProfile">
+              <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="" className="youtube_thumbnail_Profile" />
+            </div>
+
+            <div className="youtubeTitleBox_Title">
+              <div className="youtube_videoTitle">User1</div>
+               <div className="youtube_channelName">User1</div>
+             <div className="youtubeVideo_views">3 likes</div>
+            </div>
+          </div>
+
+
+        </div>
+        {/* 2 */}
+
+        <div className="youtube_video">
+
+          <div className="youtube_thumbnailBox">
+            <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="dummy" className="youtube_thumbnailPic" />
+            <div className="youtube_timingThumbnail">
+              28:05
+            </div>
+          </div>
+
+          <div className="youtubeTitleBox">
+            <div className="youtubeTitleBoxProfile">
+              <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="" className="youtube_thumbnail_Profile" />
+            </div>
+
+            <div className="youtubeTitleBox_Title">
+              <div className="youtube_videoTitle">User1</div>
+               <div className="youtube_channelName">User1</div>
+             <div className="youtubeVideo_views">3 likes</div>
+            </div>
+          </div>
+
+
+        </div>
+        {/* 3 */}
+        <div className="youtube_video">
+
+          <div className="youtube_thumbnailBox">
+            <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="dummy" className="youtube_thumbnailPic" />
+            <div className="youtube_timingThumbnail">
+              28:05
+            </div>
+          </div>
+
+          <div className="youtubeTitleBox">
+            <div className="youtubeTitleBoxProfile">
+              <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="" className="youtube_thumbnail_Profile" />
+            </div>
+
+            <div className="youtubeTitleBox_Title">
+              <div className="youtube_videoTitle">User1</div>
+               <div className="youtube_channelName">User1</div>
+             <div className="youtubeVideo_views">3 likes</div>
+            </div>
+          </div>
+
+
+        </div>
+        {/* 4 */}
+        <div className="youtube_video">
+
+          <div className="youtube_thumbnailBox">
+            <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="dummy" className="youtube_thumbnailPic" />
+            <div className="youtube_timingThumbnail">
+              28:05
+            </div>
+          </div>
+
+          <div className="youtubeTitleBox">
+            <div className="youtubeTitleBoxProfile">
+              <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="" className="youtube_thumbnail_Profile" />
+            </div>
+
+            <div className="youtubeTitleBox_Title">
+              <div className="youtube_videoTitle">User1</div>
+               <div className="youtube_channelName">User1</div>
+             <div className="youtubeVideo_views">3 likes</div>
+            </div>
+          </div>
+
+
+        </div>
+        {/* 5 */}
+        <div className="youtube_video">
+
+          <div className="youtube_thumbnailBox">
+            <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="dummy" className="youtube_thumbnailPic" />
+            <div className="youtube_timingThumbnail">
+              28:05
+            </div>
+          </div>
+
+          <div className="youtubeTitleBox">
+            <div className="youtubeTitleBoxProfile">
+              <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="" className="youtube_thumbnail_Profile" />
+            </div>
+
+            <div className="youtubeTitleBox_Title">
+              <div className="youtube_videoTitle">User1</div>
+               <div className="youtube_channelName">User1</div>
+             <div className="youtubeVideo_views">3 likes</div>
+            </div>
+          </div>
+
+
+        </div>
+        {/* 6 */}
+        <div className="youtube_video">
+
+          <div className="youtube_thumbnailBox">
+            <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="dummy" className="youtube_thumbnailPic" />
+            <div className="youtube_timingThumbnail">
+              28:05
+            </div>
+          </div>
+
+          <div className="youtubeTitleBox">
+            <div className="youtubeTitleBoxProfile">
+              <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="" className="youtube_thumbnail_Profile" />
+            </div>
+
+            <div className="youtubeTitleBox_Title">
+              <div className="youtube_videoTitle">User1</div>
+               <div className="youtube_channelName">User1</div>
+             <div className="youtubeVideo_views">3 likes</div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
     </div>
   );
 };
