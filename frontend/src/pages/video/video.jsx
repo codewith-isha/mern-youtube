@@ -16,6 +16,8 @@ const Video = () => {
 
           </video>
         </div>
+
+
         <div className="video_youtubeAbout">
 
           <div className="video_uTubeTitle">
@@ -72,10 +74,262 @@ const Video = () => {
 
         </div>
 
+        <div className="youtubeCommentSection">
+           <div className="youtubeCommentSectionTitle">
+            2 Comments
+           </div>
+           <div className="youtubeSelfComment">
+            <img src="https://th.bing.com/th/id/OIP.hA04LwcrDABDbCzqGof8iQHaHa?rs=1&pid=ImgDetMain" className="video_youtubeSelfCommentProfile" />
+            <div className="addAComment">
+              <input type="text" className='addACommentInput' placeholder='Add a comment' />
+              <div className="cancelSubmitComment">
+                <div className="cancelComment">Cancel</div>
+                <div className="cancelComment">Comment</div>
+
+              </div>
+            </div>
+           </div>
+
+           <div className="youtubeOthersComments">
+
+            <div className="youtubeSelfComment">
+               <img src="https://th.bing.com/th/id/OIP.hA04LwcrDABDbCzqGof8iQHaHa?rs=1&pid=ImgDetMain" className="video_youtubeSelfCommentProfile" />
+               <div className="others_commentSection">
+                <div className="others_commentSectionHeader">
+                  <div className="channelName_comment">UserName</div>
+                  <div className="commentTimingOthers">2024-09-30</div>
+                </div>
+
+                <div className="otherCommentSectionComment">
+                 This is the Cool Web App Project
+                </div>
+
+               </div>
+                {/* <div className="addAComment">
+              <input type="text" className='addACommentInput' placeholder='Add a comment' />
+              <div className="cancelSubmitComment">
+                <div className="cancelComment">Cancel</div>
+                <div className="cancelComment">Comment</div>
+
+              </div>
+            </div> */}
+            </div>
+
+
+             <div className="youtubeSelfComment">
+               <img src="https://th.bing.com/th/id/OIP.hA04LwcrDABDbCzqGof8iQHaHa?rs=1&pid=ImgDetMain" className="video_youtubeSelfCommentProfile" />
+               <div className="others_commentSection">
+                <div className="others_commentSectionHeader">
+                  <div className="channelName_comment">UserName</div>
+                  <div className="commentTimingOthers">2024-09-30</div>
+                </div>
+
+                <div className="otherCommentSectionComment">
+                 This is the Cool Web App Project
+                </div>
+
+               </div>
+               
+            </div>
+
+            <div className="youtubeSelfComment">
+               <img src="https://th.bing.com/th/id/OIP.hA04LwcrDABDbCzqGof8iQHaHa?rs=1&pid=ImgDetMain" className="video_youtubeSelfCommentProfile" />
+               <div className="others_commentSection">
+                <div className="others_commentSectionHeader">
+                  <div className="channelName_comment">UserName</div>
+                  <div className="commentTimingOthers">2024-09-30</div>
+                </div>
+
+                <div className="otherCommentSectionComment">
+                 This is the Cool Web App Project
+                </div>
+
+               </div>
+               
+            </div>
+
+
+
+           </div>
+        </div>
       </div>
    
       <div className="videoSuggestions">
-        video suggestions
+       <div className="videoSuggestionsBlock">
+        <div className="video_suggestion_thumbnail">
+          <img src="https://img.freepik.com/free-psd/creative-youtube-thumbnail-design-template_505751-6436.jpg" className='video_suggetion_thumbnail_img' />
+
+        </div>
+        <div className="video_suggetions_About">
+          <div className="video_suggetions_About_title">
+            T20 2024 WorldCup Final IND vs SA Last 5 overs #cricket #india
+          </div>
+          <div className="video_suggestions_About_Profile">
+            Criket 320
+          </div>
+          <div className="video_suggestions_About_Profile">
+            136K views . 1 day ago
+          </div>
+        </div>
+
+       </div>
+
+
+       <div className="videoSuggestionsBlock">
+        <div className="video_suggestion_thumbnail">
+          <img src="https://img.freepik.com/free-psd/creative-youtube-thumbnail-design-template_505751-6436.jpg" className='video_suggetion_thumbnail_img' />
+
+        </div>
+        <div className="video_suggetions_About">
+          <div className="video_suggetions_About_title">
+            T20 2024 WorldCup Final IND vs SA Last 5 overs #cricket #india
+          </div>
+          <div className="video_suggestions_About_Profile">
+            Criket 320
+          </div>
+          <div className="video_suggestions_About_Profile">
+            136K views . 1 day ago
+          </div>
+        </div>
+
+       </div>
+
+       <div className="videoSuggestionsBlock">
+        <div className="video_suggestion_thumbnail">
+          <img src="https://img.freepik.com/free-psd/creative-youtube-thumbnail-design-template_505751-6436.jpg" className='video_suggetion_thumbnail_img' />
+
+        </div>
+        <div className="video_suggetions_About">
+          <div className="video_suggetions_About_title">
+            T20 2024 WorldCup Final IND vs SA Last 5 overs #cricket #india
+          </div>
+          <div className="video_suggestions_About_Profile">
+            Criket 320
+          </div>
+          <div className="video_suggestions_About_Profile">
+            136K views . 1 day ago
+          </div>
+        </div>
+
+       </div>
+
+
+       <div className="videoSuggestionsBlock">
+        <div className="video_suggestion_thumbnail">
+          <img src="https://img.freepik.com/free-psd/creative-youtube-thumbnail-design-template_505751-6436.jpg" className='video_suggetion_thumbnail_img' />
+
+        </div>
+        <div className="video_suggetions_About">
+          <div className="video_suggetions_About_title">
+            T20 2024 WorldCup Final IND vs SA Last 5 overs #cricket #india
+          </div>
+          <div className="video_suggestions_About_Profile">
+            Criket 320
+          </div>
+          <div className="video_suggestions_About_Profile">
+            136K views . 1 day ago
+          </div>
+        </div>
+
+       </div>
+
+       <div className="videoSuggestionsBlock">
+        <div className="video_suggestion_thumbnail">
+          <img src="https://img.freepik.com/free-psd/creative-youtube-thumbnail-design-template_505751-6436.jpg" className='video_suggetion_thumbnail_img' />
+
+        </div>
+        <div className="video_suggetions_About">
+          <div className="video_suggetions_About_title">
+            T20 2024 WorldCup Final IND vs SA Last 5 overs #cricket #india
+          </div>
+          <div className="video_suggestions_About_Profile">
+            Criket 320
+          </div>
+          <div className="video_suggestions_About_Profile">
+            136K views . 1 day ago
+          </div>
+        </div>
+
+       </div>
+
+
+       <div className="videoSuggestionsBlock">
+        <div className="video_suggestion_thumbnail">
+          <img src="https://img.freepik.com/free-psd/creative-youtube-thumbnail-design-template_505751-6436.jpg" className='video_suggetion_thumbnail_img' />
+
+        </div>
+        <div className="video_suggetions_About">
+          <div className="video_suggetions_About_title">
+            T20 2024 WorldCup Final IND vs SA Last 5 overs #cricket #india
+          </div>
+          <div className="video_suggestions_About_Profile">
+            Criket 320
+          </div>
+          <div className="video_suggestions_About_Profile">
+            136K views . 1 day ago
+          </div>
+        </div>
+
+       </div>
+
+       <div className="videoSuggestionsBlock">
+        <div className="video_suggestion_thumbnail">
+          <img src="https://img.freepik.com/free-psd/creative-youtube-thumbnail-design-template_505751-6436.jpg" className='video_suggetion_thumbnail_img' />
+
+        </div>
+        <div className="video_suggetions_About">
+          <div className="video_suggetions_About_title">
+            T20 2024 WorldCup Final IND vs SA Last 5 overs #cricket #india
+          </div>
+          <div className="video_suggestions_About_Profile">
+            Criket 320
+          </div>
+          <div className="video_suggestions_About_Profile">
+            136K views . 1 day ago
+          </div>
+        </div>
+
+       </div>
+
+
+       <div className="videoSuggestionsBlock">
+        <div className="video_suggestion_thumbnail">
+          <img src="https://img.freepik.com/free-psd/creative-youtube-thumbnail-design-template_505751-6436.jpg" className='video_suggetion_thumbnail_img' />
+
+        </div>
+        <div className="video_suggetions_About">
+          <div className="video_suggetions_About_title">
+            T20 2024 WorldCup Final IND vs SA Last 5 overs #cricket #india
+          </div>
+          <div className="video_suggestions_About_Profile">
+            Criket 320
+          </div>
+          <div className="video_suggestions_About_Profile">
+            136K views . 1 day ago
+          </div>
+        </div>
+
+       </div>
+
+       <div className="videoSuggestionsBlock">
+        <div className="video_suggestion_thumbnail">
+          <img src="https://img.freepik.com/free-psd/creative-youtube-thumbnail-design-template_505751-6436.jpg" className='video_suggetion_thumbnail_img' />
+
+        </div>
+        <div className="video_suggetions_About">
+          <div className="video_suggetions_About_title">
+            T20 2024 WorldCup Final IND vs SA Last 5 overs #cricket #india
+          </div>
+          <div className="video_suggestions_About_Profile">
+            Criket 320
+          </div>
+          <div className="video_suggestions_About_Profile">
+            136K views . 1 day ago
+          </div>
+        </div>
+
+       </div>
+       
       </div>
 
       </div>

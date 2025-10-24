@@ -35,7 +35,7 @@ const HomePage = ({sideNavbar}) => {
         <div className="youtube_video">
 
           <div className="youtube_thumbnailBox">
-            <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="dummy" className="youtube_thumbnailPic" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-hTzD5dSo1W1VFR1VZv_2MbQADn7f_QSo9A&s" alt="dummy" className="youtube_thumbnailPic" />
             <div className="youtube_timingThumbnail">
               28:05
             </div>
@@ -60,7 +60,7 @@ const HomePage = ({sideNavbar}) => {
         <div className="youtube_video">
 
           <div className="youtube_thumbnailBox">
-            <img src="https://i.ytimg.com/vi/FFZSgalRSQQ/maxresdefault.jpg" alt="dummy" className="youtube_thumbnailPic" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1qpSCgHLLTmeV8O2B6menEZa-a2K5C161tA&s" alt="dummy" className="youtube_thumbnailPic" />
             <div className="youtube_timingThumbnail">
               28:05
             </div>
