@@ -17,7 +17,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={ <Home sideNavbar={sideNavbar}/>}/>
         <Route path="/watch/:id" element={<Video/>}/>
-        <Route path='/user/:id' element={<Profile/>}/>
+        <Route path='/user/:id' element={<Profile sideNavbar={sideNavbar}/>}/>
         
       </Routes>
      
